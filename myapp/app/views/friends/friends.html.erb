@@ -1,0 +1,11 @@
+<%= link_to "Friends", friends_url %>
+<%= link_to "Favorites", favorites_url %>
+<%= link_to "Greeting", greeting_url %>
+<%= link_to "Search", search_url %>
+
+<h1>Friends</h1>
+<ul>
+  <% @friends.each do |friend| %>
+    <li><%= friend %></li>
+  <% end %>
+</ul>
